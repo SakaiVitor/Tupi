@@ -1,3 +1,17 @@
+# Instruções para conectar o sensor à rede Wi-Fi:
+
+**Por padrão, os sensores estão configurados para conectarem-se à uma rede com SSID = *Sensores* e Senha = *MEGA12345***
+
+Para mudar essas configurações, basta mudar os valores de ***ssid*** e ***password*** no arquivo ***wificonfig.h*** e fazer o upload na placa novamente.
+
+Para fazer o upload, são necessários 3 arquivos: ***zbx-esp-env.ino***, ***wificonfig.h*** e ***sensors.h***.
+
+As bibliotecas necessárias estão na pasta ***libraries***. Basta acrescentá-las na pasta de bibliotecas.
+
+**IMPORTANTE: Quando for fazer o upload do código nas ESPs, tem que desconectar o fio que liga o pino *D0* ao pino *RST*. Após fazer o upload, conecte novamente o fio antes de ligar o sensor**
+
+O endereço do sensor usado para conectar ao zabbix é printado no monitor serial assim que o sensor é ligado e se conecta à rede.
+
 # Instruções para conectar o sensor ao zabbix:
 
 1. Importe o template "***Template Module ICMP Ping***" para o zabbix
@@ -19,20 +33,6 @@
 O sensor ficará ligado nos primeiros 30 segundos após conectar a pilha (não deu tempo de arrumar isso, desculpa).***
 
 9. Pronto. Se o zabbix conseguiu realizar a descoberta dos itens no endereço do sensor, os dados de temperatura e umidade já estarão disponíveis.
-
-# Instruções para conectar o sensor à rede Wi-Fi:
-
-**Por padrão, os sensores estão configurados para conectarem-se à uma rede com SSID = *Sensores* e Senha = *MEGA12345***
-
-Para mudar essas configurações, basta mudar os valores de ***ssid*** e ***password*** no arquivo ***wificonfig.h*** e fazer o upload na placa novamente.
-
-Para fazer o upload, são necessários 3 arquivos: ***zbx-esp-env.ino***, ***wificonfig.h*** e ***sensors.h***.
-
-As bibliotecas necessárias estão na pasta ***libraries***. Basta acrescentá-las na pasta de bibliotecas.
-
-**IMPORTANTE: Quando for fazer o upload do código nas ESPs, tem que desconectar o fio que liga o pino *D0* ao pino *RST*. Após fazer o upload, conecte novamente o fio antes de ligar o sensor**
-
-O endereço do sensor usado para conectar ao zabbix é printado no monitor serial assim que o sensor é ligado e se conecta à rede.
 
 # Instruções para conexões de hardware:
 Caso os fios se desconectem.
