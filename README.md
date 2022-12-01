@@ -4,6 +4,8 @@
 
 Para mudar essas configurações, basta mudar os valores de ***ssid*** e ***password*** no arquivo ***wificonfig.h*** e fazer o upload na placa novamente.
 
+Link para configurar o Arduino IDE para ESP8266: https://www.filipeflop.com/blog/programar-nodemcu-com-ide-arduino/
+
 Para fazer o upload, são necessários 3 arquivos: ***zbx-esp-env.ino***, ***wificonfig.h*** e ***sensors.h***.
 
 As bibliotecas necessárias estão na pasta ***libraries***. Basta acrescentá-las na pasta de bibliotecas.
