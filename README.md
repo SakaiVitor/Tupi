@@ -20,11 +20,11 @@ O endereço do sensor usado para conectar ao zabbix é printado no monitor seria
 4. Associe um grupo de Hosts
 5. Em Interfaces, adicione uma do tipo "***IPMI***" com o endereço do sensor na rede local
 
-![alt text](https://github.com/shirasagihimegimi/Tupi/blob/main/host.png?raw=true)
+![alt text](https://github.com/shirasagihimegimi/Tupi/blob/main/imagens/host.png?raw=true)
 
 6. No host recem criado, clique em "***descoberta***"
 
-![alt text](https://github.com/shirasagihimegimi/Tupi/blob/main/descoberta.png?raw=true)
+![alt text](https://github.com/shirasagihimegimi/Tupi/blob/main/imagens/descoberta.png?raw=true)
 
 7. Selecione o Host recem criado e clique em "***Ativar***"
 8. Selecione o Host recem criado e clique em "***Execute Now***" 
